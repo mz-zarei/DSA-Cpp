@@ -1,3 +1,10 @@
+/**
+ * Simple C++ class for printing Hello World.
+ * 
+ * @author
+ *   Mohammad Zarei <mzarei@uwaterloo.ca>
+ */
+
 
 // import the standard libary
 #include <iostream>
