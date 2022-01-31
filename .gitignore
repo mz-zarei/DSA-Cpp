@@ -1,3 +1,4 @@
 *.class
 .setting
 .DS_Store
+.vscode
