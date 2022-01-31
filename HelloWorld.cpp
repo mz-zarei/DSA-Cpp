@@ -2,12 +2,12 @@
 // import the standard libary
 #include <iostream>
 
-// import cout and endl to global space from std namespace
+// import cout and endl into global space from std namespace
 using std::cout;
 using std::endl;
 
-// define main fucntion which prints "Hello World!" into console
+// define main func. which prints "Hello World!" into console
 int main() {
-  cout << "Hello World!" << endl; 
+  cout << "Hellooo World!" << endl; 
   return 0;
 }
