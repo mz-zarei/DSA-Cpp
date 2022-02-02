@@ -1,13 +1,15 @@
 /**
- * Simple C++ class that returns sum of two integers
+ * @brief Pair class returns sum of two given integers
+ * @file Pair.cpp
+ * @author Mohammad Zarei 
+ * Contact: <mzarei@uwaterloo.ca>
  * 
- * @author
- *   Mohammad Zarei <mzarei@uwaterloo.ca>
  */
 
 
 #include <iostream>
-// define "Pair" class
+
+
 class Pair {
   public:  // Public members:
     int a;
@@ -15,7 +17,7 @@ class Pair {
     int sum();
 }; 
 
-// define "sum()"" function from "Pair" class
+// define sum() func. from Pair class
 int Pair::sum() {
   return a + b;
 }

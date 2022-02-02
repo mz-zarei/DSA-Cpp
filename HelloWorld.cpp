@@ -1,8 +1,9 @@
 /**
- * Simple C++ class for printing Hello World.
+ * @brief Simple class printing Hello World
+ * @file HelloWorld.cpp
+ * @author Mohammad Zarei 
+ * Contact: <mzarei@uwaterloo.ca>
  * 
- * @author
- *   Mohammad Zarei <mzarei@uwaterloo.ca>
  */
 
 
