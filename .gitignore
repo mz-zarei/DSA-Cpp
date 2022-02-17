@@ -2,3 +2,5 @@
 .setting
 .DS_Store
 .vscode
+*.dSYM
+

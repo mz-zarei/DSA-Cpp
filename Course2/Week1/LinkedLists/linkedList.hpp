@@ -6,7 +6,7 @@
  * 
  */
 
-#include <linkedList.h>
+#include "linkedList.h"
 
 /**
  * Returns the "data" located at the given "index"
@@ -15,7 +15,7 @@ template <typename T>
     const T & List<T>::operator[] (unsigned index)
         {
         Node *nodePointer = headNode_;                      // To walk through list with "index" steps
-        while (nodePointer != nullptr && index > 0)
+        while (nodePointer->next != nullptr && index > 0)
             {
             nodePointer = nodePointer->next;
             index--;
@@ -43,7 +43,7 @@ template <typename T>
  * List or `nullptr` if the data is not found.
  */
 template <typename T>
-    typename List<T>::Node *List<T>::_find(const T input);  // _find returns a type of node from a list of type T members
+    typename List<T>::Node *List<T>::_find(const T & input)  // _find returns a type of node from a list of type T members
         {
         Node *nodePointer = headNode_;
         while (nodePointer != nullptr && input != nodePointer->data)

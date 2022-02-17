@@ -22,7 +22,7 @@ class List
                 Node (const T & input) : data(input), next(nullptr) {}
             };
         Node *headNode_;                         // points to the start of our list
-        Node *_find (const T input);
+        Node *_find(const T & input);
 
     public:
         const T & operator [] (unsigned index);  // To access to item given its "index"
@@ -44,4 +44,3 @@ class List
             };
     };
 
-// #include <linkedList.hpp>
