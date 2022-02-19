@@ -13,14 +13,30 @@ int main()
     {
     List<int> list;
 
-    const int a = 3;
-    const int b = 34;
+    const int a = 1;
+    const int b = 2;
+    const int c = 3;
 
-    std::cout << "Insert a at the front of the list..." << std::endl;
-    list.insert(a);
-    std::cout << "Item list[0]: "<< list[0] << std::endl;
-    list.insert(b);
-    std::cout << "Item list[0]: "<< list[0] << std::endl;
-    std::cout << "Item list[1]: "<< list[1] << std::endl;
+
+    std::cout << "Insert a at the end of the list..." << std::endl;
+    list.pushAtEnd(a);
+    list.pushAtEnd(b);
+    list.pushAtEnd(c);
+    std::cout << "(1) List items: " << std::endl;
+    list.printList();
+
+    list.pushAtStart(b);
+    std::cout << "(2) List items: " << std::endl;
+    list.printList();
+
+    list.pushAtIndex(c, 2);
+    std::cout << "(3) List items: " << std::endl;
+    list.printList();
+
+    list.pushAtIndex(c, 0);
+    std::cout << "(4) List items: " << std::endl;
+    list.printList();
+
+    std::cout << "Size of list: "<< list.getSize() << std::endl;
     }
 

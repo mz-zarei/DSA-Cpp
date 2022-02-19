@@ -15,18 +15,23 @@ class List
         class Node 
             {
             public:
-                // A node refers to a pair of "data" and link to "next" node
+                // A node refers to a pair of "data" and link to "nextNode" node
                 const T & data;
-                Node *next;
-                // Constructor that takes "input" and initialize "data" and "next".
-                Node (const T & input) : data(input), next(nullptr) {}
+                Node *nextNode;
+                // Constructor that takes "input" and initialize "data" and "nextNode".
+                Node (const T & input) : data(input), nextNode(nullptr) {}
             };
-        Node *headNode_;                         // points to the start of our list
+        Node *headNode_;                                             // points to the start of our list
         Node *_find(const T & input);
 
     public:
+        void pushAtStart (const T & input);                          // To insert a given input at the start of the list
+        void pushAtEnd (const T & input);                            // To insert a given input at the end of the list
+        void pushAtIndex (const T & input, unsigned index);          // To insert a given input after a given index in the list
+        void printList(void);                    // To print the list items
+        unsigned int getSize(void);              // To get the size of the linked list
+        
         const T & operator [] (unsigned index);  // To access to item given its "index"
-        void insert (const T & input);           // To insert a given input at the front of the list
         List() : headNode_(nullptr) {}           // To make sure that headNode_ is null-initialized.
         ~List()                                  // To delete assigned memory to List when it is destroyed
             {                                
@@ -34,7 +39,7 @@ class List
             while (nodePointer != nullptr)
                 {
                 Node *tempNodePointer = nodePointer;    // Copy the address that the "nodePointer" has currently.
-                nodePointer = nodePointer -> next;      // Set the pointer to the "next" pointer of the current node.
+                nodePointer = nodePointer -> nextNode;  // Set the pointer to the "nextNode" pointer of the current node.
                 
                 delete tempNodePointer;                 // Now delete the temporary pointer and set it to nullptr
                 tempNodePointer = nullptr;
