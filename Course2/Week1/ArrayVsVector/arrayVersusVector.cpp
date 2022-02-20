@@ -32,4 +32,6 @@ int main() {
 
     std::cout << "Capacity of vector after adding new item: " << array2.capacity() << "\n";
     std::cout << "Size of vector after adding new item: " << array2.size() << "\n";
+
+    return 0;
 }

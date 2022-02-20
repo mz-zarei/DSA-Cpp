@@ -17,7 +17,6 @@ int main()
     const int b = 2;
     const int c = 3;
 
-
     std::cout << "Insert a at the end of the list..." << std::endl;
     list.pushAtEnd(a);
     list.pushAtEnd(b);
