@@ -9,7 +9,7 @@
 
 - Array versus Vectors
 - Queue versus Stacks
-- Tree Structures
+- Tree Structures: BST, AVL, BTree, Heap
 - Project 1: Insertion and merge sort using doubly-linked lists
 - Project 2: Level Order Generic Tree Traversal
 
