@@ -7,7 +7,7 @@
 
 **Course 2**: Ordered Data Structures (cont.)
 
-- Array versus Vectors
+- Array vs. Vectors
 - Queue versus Stacks
 - Tree Structures: BST, AVL, BTree, Heap
 - Project 1: Insertion and merge sort using doubly-linked lists
