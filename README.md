@@ -5,7 +5,7 @@
 - Course project: Image transform with C++
 - Weekly challenges and assignments
 
-**Course 2**: Ordered Data Structures (cont.)
+**Course 2**: Ordered Data Structures
 
 - Array vs. Vectors
 - Queue versus Stacks
